@@ -290,7 +290,7 @@ Overall, the model appears to be reliable and well-fitted to the data, as indica
     - March, April, May, June, September: All these months have positive impacts on the rental bike count, with September having the highest positive impact among the months listed.
 
 - Note: Full name of some varibale, as we have shorted due to long name
-  - Short name and their full name of wethersiuation
+  - Short name and their full name of weather situation
     - Clear = Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
     - Mist/Cloudy = Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
     - Light Snow/Rain = Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
