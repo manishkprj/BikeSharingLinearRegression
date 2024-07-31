@@ -26,6 +26,9 @@
 
 ### Univariate Analysis - Visualising Numerical Variables
 
+![Numerical Variables 1](images/num-scatter-1.png)
+![Numerical Variables 2](images/num-scatter-2.png)
+
 - Strong Positive Correlation between `temp` and `atemp`, removing atemp.
 - Strong Positive Correlation between `temp` and `cnt`. 
 - There is no strong multicollinearity observed among the other numerical columns.
