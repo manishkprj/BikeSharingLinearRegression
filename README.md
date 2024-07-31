@@ -161,15 +161,17 @@ Working days can affect bike rentals, making it a relevant feature for the model
 - Splitting training data into X and y
 
 - Simple Linear Regression with `temp` 
-	- very low R-squared value
+  - very low R-squared value
 - Multiple linear regression model using all variables
-	- Some variables have very high VIF values and high p-values, so it is better to use Recursive Feature Elimination (RFE) to determine the best variables.
+  - Some variables have very high VIF values and high p-values, so it is better to use Recursive Feature Elimination (RFE) to determine the best variables.
 - Using RFE
-	- The columns we get from RFE will be considered for further manual refining of the model.
+  - The columns we get from RFE will be considered for further manual refining of the model.
 
 
 
-## Residual Analysis of the train data 
+## Residual Analysis on the train data 
+
+![Residual Analysis on Training data](images/residual_analysis.png)
 
 ### Interpretation
 1. The errors are centered around zero, which is a good sign. This indicates that the model does not have a consistent bias in one direction.
@@ -186,14 +188,6 @@ Based on the visualization, it seems like the model is performing well, with err
 
 ## Making Predictions Using the Final Model
 
-- Residual Analysis on Training data
-
-![Residual Analysis on Training data](images/actvspred.png)
-  
-  - The errors are centered around zero, which is a good sign. This indicates that the model does not have a consistent bias in one direction.
-  - The density curve resembles a normal distribution (bell curve), which is also a positive indicator. Normally distributed errors suggest that the model captures the data patterns well and that the errors are random.
-  - The spread of the errors (width of the distribution) indicates the model's accuracy. A narrower spread would indicate more precise predictions, whereas a wider spread indicates more variation in the error terms.
-
 - Scatter plot between the fitted values of 'rentals' and the residuals
 
 ![Fitted Values vs Residual](images/fitted_values.png)
@@ -201,9 +195,6 @@ Based on the visualization, it seems like the model is performing well, with err
   - Overall, this residuals vs. fitted values plot suggests that the regression model is performing well and that the assumptions underlying the model are being met. The model appears to be reliable, as indicated by the random scatter of residuals around the horizontal line at zero.
 
 - r2_score(y_true=y_test, y_pred = y_test_pred) = 0.81
-
-- Plotting y_test and y_pred to understand the spread
-	- Overall, this `y_test` vs `y_pred` plot suggests that the regression model is performing well and making accurate predictions. The model appears to be reliable, as indicated by the closeness of the points to the 45-degree line and the lack of systematic bias in the predictions.
 
 - Actual vs Predicted
 
@@ -215,7 +206,7 @@ Based on the visualization, it seems like the model is performing well, with err
 
 ![Residuals Test](images/residualTest.png)
 
-	- Overall, this histogram suggests that the model is well-fitted to the data, as the residuals are normally distributed and centered around zero, with only a few outliers. This is a good indication of a reliable regression model.
+  - Overall, this histogram suggests that the model is well-fitted to the data, as the residuals are normally distributed and centered around zero, with only a few outliers. This is a good indication of a reliable regression model.
 
 
 Overall, the model appears to be reliable and well-fitted to the data, as indicated by the actual vs. predicted plot.
